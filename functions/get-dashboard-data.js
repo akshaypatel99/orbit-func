@@ -1,5 +1,5 @@
 const data = require('./../data/dashboard');
-const checkAuth = require('./../util');
+const { checkAuth } = require('./../util');
 
 exports.handler = async function (event, context, callback) {
 	try {
