@@ -11,7 +11,7 @@ exports.handler = async function (event, context, callback) {
 	} catch (err) {
 		return callback(null, {
 			statusCode: 401,
-			body: JSON.stringify({ error: err }),
+			body: JSON.stringify({ error: err.message }),
 		});
 	}
 };
